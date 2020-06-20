@@ -1,0 +1,74 @@
+E:\Visual Studio 2019\OracleWebAPIService\bin\Debug\netcoreapp3.1\appsettings.Development.json
+E:\Visual Studio 2019\OracleWebAPIService\bin\Debug\netcoreapp3.1\appsettings.json
+E:\Visual Studio 2019\OracleWebAPIService\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
+E:\Visual Studio 2019\OracleWebAPIService\bin\Debug\netcoreapp3.1\OracleWebAPIService.exe
+E:\Visual Studio 2019\OracleWebAPIService\bin\Debug\netcoreapp3.1\OracleWebAPIService.deps.json
+E:\Visual Studio 2019\OracleWebAPIService\bin\Debug\netcoreapp3.1\OracleWebAPIService.runtimeconfig.json
+E:\Visual Studio 2019\OracleWebAPIService\bin\Debug\netcoreapp3.1\OracleWebAPIService.runtimeconfig.dev.json
+E:\Visual Studio 2019\OracleWebAPIService\bin\Debug\netcoreapp3.1\OracleWebAPIService.dll
+E:\Visual Studio 2019\OracleWebAPIService\bin\Debug\netcoreapp3.1\OracleWebAPIService.pdb
+E:\Visual Studio 2019\OracleWebAPIService\bin\Debug\netcoreapp3.1\Antlr3.Runtime.dll
+E:\Visual Studio 2019\OracleWebAPIService\bin\Debug\netcoreapp3.1\FluentNHibernate.dll
+E:\Visual Studio 2019\OracleWebAPIService\bin\Debug\netcoreapp3.1\Iesi.Collections.dll
+E:\Visual Studio 2019\OracleWebAPIService\bin\Debug\netcoreapp3.1\NHibernate.dll
+E:\Visual Studio 2019\OracleWebAPIService\bin\Debug\netcoreapp3.1\Oracle.ManagedDataAccess.dll
+E:\Visual Studio 2019\OracleWebAPIService\bin\Debug\netcoreapp3.1\Remotion.Linq.dll
+E:\Visual Studio 2019\OracleWebAPIService\bin\Debug\netcoreapp3.1\Remotion.Linq.EagerFetching.dll
+E:\Visual Studio 2019\OracleWebAPIService\bin\Debug\netcoreapp3.1\System.Configuration.ConfigurationManager.dll
+E:\Visual Studio 2019\OracleWebAPIService\bin\Debug\netcoreapp3.1\System.Net.Http.WinHttpHandler.dll
+E:\Visual Studio 2019\OracleWebAPIService\bin\Debug\netcoreapp3.1\System.Security.Cryptography.ProtectedData.dll
+E:\Visual Studio 2019\OracleWebAPIService\bin\Debug\netcoreapp3.1\System.ServiceModel.Primitives.dll
+E:\Visual Studio 2019\OracleWebAPIService\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Net.Http.WinHttpHandler.dll
+E:\Visual Studio 2019\OracleWebAPIService\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netstandard2.0\System.Private.ServiceModel.dll
+E:\Visual Studio 2019\OracleWebAPIService\bin\Debug\netcoreapp3.1\runtimes\win7\lib\netstandard2.0\System.Private.ServiceModel.dll
+E:\Visual Studio 2019\OracleWebAPIService\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+E:\Visual Studio 2019\OracleWebAPIService\bin\Debug\netcoreapp3.1\DatabaseAccess.dll
+E:\Visual Studio 2019\OracleWebAPIService\bin\Debug\netcoreapp3.1\DatabaseAccess.pdb
+E:\Visual Studio 2019\OracleWebAPIService\obj\Debug\netcoreapp3.1\OracleWebAPIService.csprojAssemblyReference.cache
+E:\Visual Studio 2019\OracleWebAPIService\obj\Debug\netcoreapp3.1\OracleWebAPIService.csproj.CoreCompileInputs.cache
+E:\Visual Studio 2019\OracleWebAPIService\obj\Debug\netcoreapp3.1\OracleWebAPIService.MvcApplicationPartsAssemblyInfo.cache
+E:\Visual Studio 2019\OracleWebAPIService\obj\Debug\netcoreapp3.1\OracleWebAPIService.AssemblyInfoInputs.cache
+E:\Visual Studio 2019\OracleWebAPIService\obj\Debug\netcoreapp3.1\OracleWebAPIService.AssemblyInfo.cs
+E:\Visual Studio 2019\OracleWebAPIService\obj\Debug\netcoreapp3.1\OracleWebAPIService.RazorTargetAssemblyInfo.cache
+E:\Visual Studio 2019\OracleWebAPIService\obj\Debug\netcoreapp3.1\OracleWebAPIService.csproj.CopyComplete
+E:\Visual Studio 2019\OracleWebAPIService\obj\Debug\netcoreapp3.1\staticwebassets\OracleWebAPIService.StaticWebAssets.Manifest.cache
+E:\Visual Studio 2019\OracleWebAPIService\obj\Debug\netcoreapp3.1\staticwebassets\OracleWebAPIService.StaticWebAssets.xml
+E:\Visual Studio 2019\OracleWebAPIService\obj\Debug\netcoreapp3.1\OracleWebAPIService.dll
+E:\Visual Studio 2019\OracleWebAPIService\obj\Debug\netcoreapp3.1\OracleWebAPIService.pdb
+E:\Visual Studio 2019\OracleWebAPIService\obj\Debug\netcoreapp3.1\OracleWebAPIService.genruntimeconfig.cache
+D:\Faks\Sistemi baza\Projekat\IzboriAPI\OracleWebAPIService\bin\Debug\netcoreapp3.1\Antlr3.Runtime.dll
+D:\Faks\Sistemi baza\Projekat\IzboriAPI\OracleWebAPIService\bin\Debug\netcoreapp3.1\FluentNHibernate.dll
+D:\Faks\Sistemi baza\Projekat\IzboriAPI\OracleWebAPIService\bin\Debug\netcoreapp3.1\Iesi.Collections.dll
+D:\Faks\Sistemi baza\Projekat\IzboriAPI\OracleWebAPIService\bin\Debug\netcoreapp3.1\NHibernate.dll
+D:\Faks\Sistemi baza\Projekat\IzboriAPI\OracleWebAPIService\bin\Debug\netcoreapp3.1\Oracle.ManagedDataAccess.dll
+D:\Faks\Sistemi baza\Projekat\IzboriAPI\OracleWebAPIService\bin\Debug\netcoreapp3.1\Remotion.Linq.dll
+D:\Faks\Sistemi baza\Projekat\IzboriAPI\OracleWebAPIService\bin\Debug\netcoreapp3.1\Remotion.Linq.EagerFetching.dll
+D:\Faks\Sistemi baza\Projekat\IzboriAPI\OracleWebAPIService\bin\Debug\netcoreapp3.1\System.Configuration.ConfigurationManager.dll
+D:\Faks\Sistemi baza\Projekat\IzboriAPI\OracleWebAPIService\bin\Debug\netcoreapp3.1\System.Net.Http.WinHttpHandler.dll
+D:\Faks\Sistemi baza\Projekat\IzboriAPI\OracleWebAPIService\bin\Debug\netcoreapp3.1\System.Security.Cryptography.ProtectedData.dll
+D:\Faks\Sistemi baza\Projekat\IzboriAPI\OracleWebAPIService\bin\Debug\netcoreapp3.1\System.ServiceModel.Primitives.dll
+D:\Faks\Sistemi baza\Projekat\IzboriAPI\OracleWebAPIService\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Net.Http.WinHttpHandler.dll
+D:\Faks\Sistemi baza\Projekat\IzboriAPI\OracleWebAPIService\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netstandard2.0\System.Private.ServiceModel.dll
+D:\Faks\Sistemi baza\Projekat\IzboriAPI\OracleWebAPIService\bin\Debug\netcoreapp3.1\runtimes\win7\lib\netstandard2.0\System.Private.ServiceModel.dll
+D:\Faks\Sistemi baza\Projekat\IzboriAPI\OracleWebAPIService\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+D:\Faks\Sistemi baza\Projekat\IzboriAPI\OracleWebAPIService\bin\Debug\netcoreapp3.1\DatabaseAccess.dll
+D:\Faks\Sistemi baza\Projekat\IzboriAPI\OracleWebAPIService\bin\Debug\netcoreapp3.1\DatabaseAccess.pdb
+D:\Faks\Sistemi baza\Projekat\IzboriAPI\OracleWebAPIService\obj\Debug\netcoreapp3.1\OracleWebAPIService.csprojAssemblyReference.cache
+D:\Faks\Sistemi baza\Projekat\IzboriAPI\OracleWebAPIService\obj\Debug\netcoreapp3.1\OracleWebAPIService.AssemblyInfoInputs.cache
+D:\Faks\Sistemi baza\Projekat\IzboriAPI\OracleWebAPIService\obj\Debug\netcoreapp3.1\OracleWebAPIService.AssemblyInfo.cs
+D:\Faks\Sistemi baza\Projekat\IzboriAPI\OracleWebAPIService\obj\Debug\netcoreapp3.1\OracleWebAPIService.RazorTargetAssemblyInfo.cache
+D:\Faks\Sistemi baza\Projekat\IzboriAPI\OracleWebAPIService\obj\Debug\netcoreapp3.1\OracleWebAPIService.csproj.CopyComplete
+D:\Faks\Sistemi baza\Projekat\IzboriAPI\OracleWebAPIService\obj\Debug\netcoreapp3.1\OracleWebAPIService.dll
+D:\Faks\Sistemi baza\Projekat\IzboriAPI\OracleWebAPIService\obj\Debug\netcoreapp3.1\OracleWebAPIService.pdb
+D:\Faks\Sistemi baza\Projekat\IzboriAPI\OracleWebAPIService\bin\Debug\netcoreapp3.1\appsettings.Development.json
+D:\Faks\Sistemi baza\Projekat\IzboriAPI\OracleWebAPIService\bin\Debug\netcoreapp3.1\appsettings.json
+D:\Faks\Sistemi baza\Projekat\IzboriAPI\OracleWebAPIService\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
+D:\Faks\Sistemi baza\Projekat\IzboriAPI\OracleWebAPIService\bin\Debug\netcoreapp3.1\OracleWebAPIService.exe
+D:\Faks\Sistemi baza\Projekat\IzboriAPI\OracleWebAPIService\bin\Debug\netcoreapp3.1\OracleWebAPIService.deps.json
+D:\Faks\Sistemi baza\Projekat\IzboriAPI\OracleWebAPIService\bin\Debug\netcoreapp3.1\OracleWebAPIService.runtimeconfig.json
+D:\Faks\Sistemi baza\Projekat\IzboriAPI\OracleWebAPIService\bin\Debug\netcoreapp3.1\OracleWebAPIService.runtimeconfig.dev.json
+D:\Faks\Sistemi baza\Projekat\IzboriAPI\OracleWebAPIService\bin\Debug\netcoreapp3.1\OracleWebAPIService.dll
+D:\Faks\Sistemi baza\Projekat\IzboriAPI\OracleWebAPIService\bin\Debug\netcoreapp3.1\OracleWebAPIService.pdb
+D:\Faks\Sistemi baza\Projekat\IzboriAPI\OracleWebAPIService\obj\Debug\netcoreapp3.1\staticwebassets\OracleWebAPIService.StaticWebAssets.Manifest.cache
+D:\Faks\Sistemi baza\Projekat\IzboriAPI\OracleWebAPIService\obj\Debug\netcoreapp3.1\staticwebassets\OracleWebAPIService.StaticWebAssets.xml
+D:\Faks\Sistemi baza\Projekat\IzboriAPI\OracleWebAPIService\obj\Debug\netcoreapp3.1\OracleWebAPIService.MvcApplicationPartsAssemblyInfo.cache

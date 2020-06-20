@@ -1,0 +1,17 @@
+E:\Visual Studio 2019\DatabaseAccess\bin\Debug\netcoreapp3.1\DatabaseAccess.deps.json
+E:\Visual Studio 2019\DatabaseAccess\bin\Debug\netcoreapp3.1\DatabaseAccess.dll
+E:\Visual Studio 2019\DatabaseAccess\obj\Debug\netcoreapp3.1\DatabaseAccess.AssemblyInfoInputs.cache
+E:\Visual Studio 2019\DatabaseAccess\obj\Debug\netcoreapp3.1\DatabaseAccess.AssemblyInfo.cs
+E:\Visual Studio 2019\DatabaseAccess\obj\Debug\netcoreapp3.1\DatabaseAccess.csproj.CoreCompileInputs.cache
+E:\Visual Studio 2019\DatabaseAccess\bin\Debug\netcoreapp3.1\DatabaseAccess.pdb
+E:\Visual Studio 2019\DatabaseAccess\obj\Debug\netcoreapp3.1\DatabaseAccess.dll
+E:\Visual Studio 2019\DatabaseAccess\obj\Debug\netcoreapp3.1\DatabaseAccess.pdb
+E:\Visual Studio 2019\DatabaseAccess\obj\Debug\netcoreapp3.1\DatabaseAccess.csprojAssemblyReference.cache
+D:\Faks\Sistemi baza\Projekat\IzboriAPI\DatabaseAccess\obj\Debug\netcoreapp3.1\DatabaseAccess.csprojAssemblyReference.cache
+D:\Faks\Sistemi baza\Projekat\IzboriAPI\DatabaseAccess\obj\Debug\netcoreapp3.1\DatabaseAccess.AssemblyInfoInputs.cache
+D:\Faks\Sistemi baza\Projekat\IzboriAPI\DatabaseAccess\obj\Debug\netcoreapp3.1\DatabaseAccess.AssemblyInfo.cs
+D:\Faks\Sistemi baza\Projekat\IzboriAPI\DatabaseAccess\obj\Debug\netcoreapp3.1\DatabaseAccess.dll
+D:\Faks\Sistemi baza\Projekat\IzboriAPI\DatabaseAccess\obj\Debug\netcoreapp3.1\DatabaseAccess.pdb
+D:\Faks\Sistemi baza\Projekat\IzboriAPI\DatabaseAccess\bin\Debug\netcoreapp3.1\DatabaseAccess.deps.json
+D:\Faks\Sistemi baza\Projekat\IzboriAPI\DatabaseAccess\bin\Debug\netcoreapp3.1\DatabaseAccess.dll
+D:\Faks\Sistemi baza\Projekat\IzboriAPI\DatabaseAccess\bin\Debug\netcoreapp3.1\DatabaseAccess.pdb
