@@ -1,5 +1,6 @@
 ﻿using DatabaseAccess.DTOs;
 using DatabaseAccess.Entities;
+using DatabaseAccess.Mapping;
 using NHibernate;
 using System;
 using System.Collections.Generic;
@@ -27,6 +28,7 @@ namespace DatabaseAccess
                     var aktivista = new Aktivista_Stranke_View(a_s);
                     aktivista.Email = a_s.Email.Select(ak_str => new Email_View(ak_str)).ToList();
                     aktivista.Telefon = a_s.Telefon.Select(ak_str => new Telefon_View(ak_str)).ToList();
+                    aktivista.Akcije = a_s.Akcije.Select(ak_str => new Akcije_View(ak_str)).ToList();
 
                     rez.Add(aktivista);
                 }
@@ -170,5 +172,108 @@ namespace DatabaseAccess
         }
 
         #endregion
+
+        #region akcije
+        #region deljenjeletki
+
+        public static List<Deljenje_Letki_View> VratiDeljenjeLetki()
+        {
+            List<Deljenje_Letki_View> rez = new List<Deljenje_Letki_View>();
+
+            try
+            {
+                ISession s = DataLayer.GetSession();
+
+                IEnumerable<Deljenje_Letki> dl = from o in s.Query<Deljenje_Letki>()
+                                                      select o;
+
+                foreach (Deljenje_Letki o in dl)
+                {
+                    var dlview = new Deljenje_Letki_View(o);
+                    dlview.Lokacije = o.Lokacije.Select(o => new Lokacije_View(o)).ToList();
+                    dlview.Aktivisti = o.Aktivisti.Select(o => new Aktivista_Stranke_View(o)).ToList();
+
+                    rez.Add(dlview);
+                }
+
+                s.Close();
+
+            }
+            catch (Exception)
+            {
+                //handle exceptions
+                throw;
+            }
+
+            return rez;
+        }
+
+        public static void DeljenjeLetkiDodajAktivistu(Aktivista_Stranke_View noviaktivista)
+        {
+            try
+            {
+                ISession s = DataLayer.GetSession();
+
+                Aktivista_Stranke aktivista = new Aktivista_Stranke
+                {
+                    Licno_ime = noviaktivista.Licno_ime,
+                    Ime_roditelja = noviaktivista.Ime_roditelja,
+                    Prezime = noviaktivista.Prezime,
+                    Datum_rodjenja = noviaktivista.Datum_rodjenja,
+                    Ulica = noviaktivista.Ulica,
+                    Broj = noviaktivista.Broj
+                };
+
+                aktivista.Akcije.
+
+                s.SaveOrUpdate(aktivista);
+                s.Flush();
+                s.Close();
+            }
+            catch (Exception)
+            {
+                //handle exceptions
+                throw;
+            }
+        }
+
+        #endregion
+
+        #region susretikandidatasagradjanima
+
+        public static List<Susreti_Kandidata_Sa_Gradjanima_View> VratiSusretiKandidataSaGradjanima()
+        {
+            List<Susreti_Kandidata_Sa_Gradjanima_View> rez = new List<Susreti_Kandidata_Sa_Gradjanima_View>();
+
+            try
+            {
+                ISession s = DataLayer.GetSession();
+
+                IEnumerable<Susreti_Kandidata_Sa_Gradjanima> sksg = from o in s.Query<Susreti_Kandidata_Sa_Gradjanima>()
+                                                 select o;
+
+                foreach (Susreti_Kandidata_Sa_Gradjanima o in sksg)
+                {
+                    var dlview = new Susreti_Kandidata_Sa_Gradjanima_View(o);
+
+                    rez.Add(dlview);
+                }
+
+                s.Close();
+
+            }
+            catch (Exception)
+            {
+                //handle exceptions
+                throw;
+            }
+
+            return rez;
+        }
+
+        #endregion
+
+        #endregion
+
     }
 }

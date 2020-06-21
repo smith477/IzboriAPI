@@ -15,3 +15,12 @@ D:\Faks\Sistemi baza\Projekat\IzboriAPI\DatabaseAccess\obj\Debug\netcoreapp3.1\D
 D:\Faks\Sistemi baza\Projekat\IzboriAPI\DatabaseAccess\bin\Debug\netcoreapp3.1\DatabaseAccess.deps.json
 D:\Faks\Sistemi baza\Projekat\IzboriAPI\DatabaseAccess\bin\Debug\netcoreapp3.1\DatabaseAccess.dll
 D:\Faks\Sistemi baza\Projekat\IzboriAPI\DatabaseAccess\bin\Debug\netcoreapp3.1\DatabaseAccess.pdb
+C:\Users\acer\Desktop\IIIFazaSBP\IzboriAPI\DatabaseAccess\bin\Debug\netcoreapp3.1\DatabaseAccess.deps.json
+C:\Users\acer\Desktop\IIIFazaSBP\IzboriAPI\DatabaseAccess\bin\Debug\netcoreapp3.1\DatabaseAccess.dll
+C:\Users\acer\Desktop\IIIFazaSBP\IzboriAPI\DatabaseAccess\bin\Debug\netcoreapp3.1\DatabaseAccess.pdb
+C:\Users\acer\Desktop\IIIFazaSBP\IzboriAPI\DatabaseAccess\obj\Debug\netcoreapp3.1\DatabaseAccess.csprojAssemblyReference.cache
+C:\Users\acer\Desktop\IIIFazaSBP\IzboriAPI\DatabaseAccess\obj\Debug\netcoreapp3.1\DatabaseAccess.csproj.CoreCompileInputs.cache
+C:\Users\acer\Desktop\IIIFazaSBP\IzboriAPI\DatabaseAccess\obj\Debug\netcoreapp3.1\DatabaseAccess.AssemblyInfoInputs.cache
+C:\Users\acer\Desktop\IIIFazaSBP\IzboriAPI\DatabaseAccess\obj\Debug\netcoreapp3.1\DatabaseAccess.AssemblyInfo.cs
+C:\Users\acer\Desktop\IIIFazaSBP\IzboriAPI\DatabaseAccess\obj\Debug\netcoreapp3.1\DatabaseAccess.dll
+C:\Users\acer\Desktop\IIIFazaSBP\IzboriAPI\DatabaseAccess\obj\Debug\netcoreapp3.1\DatabaseAccess.pdb

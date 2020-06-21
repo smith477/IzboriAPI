@@ -19,6 +19,10 @@ namespace DatabaseAccess.DTOs
 
         public Koordinator_Opstine_View(Koordinator_Opstine ko) : base(ko)
         {
+            if(ko == null)
+            {
+                return;
+            }
             Adresa_Kancelarije = ko.Adresa_Kancelarije;
             Ime_Opstine = ko.Ime_Opstine;
         }

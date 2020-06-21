@@ -7,7 +7,7 @@ namespace DatabaseAccess.DTOs
 {
     public class TelefonId_View
     {
-        public virtual Aktivista_Stranke_View Aktivista { get; set; }
+        //public virtual Aktivista_Stranke_View Aktivista { get; set; }
         public virtual string Telefon { get; set; }
 
         public TelefonId_View() { }
@@ -15,7 +15,7 @@ namespace DatabaseAccess.DTOs
         public TelefonId_View(TelefonId tid)
         {
             Telefon = tid.Telefon;
-            Aktivista = new Aktivista_Stranke_View(tid.Aktivista);
+            //Aktivista = new Aktivista_Stranke_View(tid.Aktivista);
         }
     }
 }
