@@ -1,0 +1,756 @@
+  #region Reklame
+
+        #region Mediji
+        public static List<Mediji_View> VratiMedije()
+        {
+            List<Mediji_View> rez = new List<Mediji_View>();
+
+            try
+            {
+                ISession s = DataLayer.GetSession();
+
+                IEnumerable<Mediji> mitinzi = from o in s.Query<Mediji>()
+                                                                      select o;
+
+                foreach (Mediji o in mitinzi)
+                {
+                    var m = new Mediji_View(o);
+          
+                    rez.Add(m);
+                }
+
+                s.Close();
+
+            }
+            catch (Exception)
+            {
+                //handle exceptions
+                throw;
+            }
+
+            return rez;
+        }
+
+        public static Mediji_View VratiMedijePoId(int id)//200OK
+        {
+            Mediji_View m;
+            try
+            {
+                ISession s = DataLayer.GetSession();
+
+                Mediji mediji = s.Load<Mediji>(id);
+
+
+                m = new Mediji_View(mediji);
+
+                s.Close();
+            }
+            catch (Exception)
+            {
+                //handle exceptions
+                throw;
+            }
+            return m;
+        }
+
+        public static void DodajMedije(int idKoordinaoraOpstine, Mediji_View m)//200OK
+        {
+            try
+            {
+                ISession s = DataLayer.GetSession();
+
+                Koordinator_Opstine kOpstine = s.Load<Koordinator_Opstine>(idKoordinaoraOpstine);
+
+                Mediji pmiting = new Mediji
+                {
+                    BrojEmitovanja = m.BrojEmitovanja,
+                    TrajanjeReklame = m.TrajanjeReklame,
+                    NazivMedija = m.NazivMedija,
+                    Cena = m.Cena,
+                    TrajanjeOd = m.TrajanjeOd,
+                    TrajanjeDo = m.TrajanjeDo,
+                    Koordinator = kOpstine
+
+                };
+
+                s.SaveOrUpdate(pmiting);
+                s.Flush();
+                s.Close();
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+        }
+
+        public static Mediji_View AzurirajMedije(Mediji_View m)//200OK
+        {
+            try
+            {
+                ISession s = DataLayer.GetSession();
+
+                Mediji o = s.Load<Mediji>(m.Id);
+                o.TrajanjeDo = m.TrajanjeDo;
+                o.TrajanjeOd = m.TrajanjeOd;
+                o.TrajanjeReklame = m.TrajanjeReklame;
+                o.NazivMedija = m.NazivMedija;
+                    
+
+                s.Update(o);
+                s.Flush();
+                s.Close();
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+
+            return m;
+        }
+
+        public static void ObrisiMedije(int id)//200OK
+        {
+            try
+            {
+                ISession s = DataLayer.GetSession();
+
+                Mediji m = s.Load<Mediji>(id);
+
+                m.Koordinator = null;
+
+
+                s.SaveOrUpdate(m);
+                s.Flush();
+
+                s.Delete(m);
+                s.Flush();
+                s.Close();
+            }
+            catch (Exception)
+            {
+                //handle exceptions
+                throw;
+            }
+        }
+
+        public static void DodajKoordinatoraMediji(int idKoordinatora, Mediji_View m)
+        {
+            try
+            {
+                ISession s = DataLayer.GetSession();
+
+
+                Koordinator_Opstine kOpstine = s.Load<Koordinator_Opstine>(idKoordinatora);
+
+                Mediji med = s.Load<Mediji>(m);
+
+
+                med.Koordinator = kOpstine;
+
+                kOpstine.Izborne_Aktivnosti.Add(med);
+
+
+                s.SaveOrUpdate(med);
+                s.Flush();
+                s.Close();
+
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+        }
+
+        #endregion
+
+        #region Stampa
+        public static List<Stampa_View> VratiStampu()
+        {
+            List<Stampa_View> rez = new List<Stampa_View>();
+
+            try
+            {
+                ISession s = DataLayer.GetSession();
+
+                IEnumerable<Stampa> stampa = from o in s.Query<Stampa>()
+                                              select o;
+
+                foreach (Stampa o in stampa)
+                {
+                    var m = new Stampa_View(o);
+
+                    rez.Add(m);
+                }
+
+                s.Close();
+
+            }
+            catch (Exception)
+            {
+                //handle exceptions
+                throw;
+            }
+
+            return rez;
+        }
+
+        public static Stampa_View VratiStampuPoId(int id)//200OK
+        {
+            Stampa_View m;
+            try
+            {
+                ISession s = DataLayer.GetSession();
+
+                Stampa stampa = s.Load<Stampa>(id);
+
+
+                m = new Stampa_View(stampa);
+
+                s.Close();
+            }
+            catch (Exception)
+            {
+                //handle exceptions
+                throw;
+            }
+            return m;
+        }
+
+        public static void DodajStampu(int idKoordinaoraOpstine, Stampa_View m)//200OK
+        {
+            try
+            {
+                ISession s = DataLayer.GetSession();
+
+                Koordinator_Opstine kOpstine = s.Load<Koordinator_Opstine>(idKoordinaoraOpstine);
+
+                Stampa stampa = new Stampa
+                {
+                    Boja = m.Boja,
+                    NazivLista = m.NazivLista,
+                    TrajanjeDo = m.TrajanjeDo,
+                    TrajanjeOd = m.TrajanjeOd,
+                    Cena = m.Cena,
+                    Koordinator = kOpstine
+
+                };
+
+                s.SaveOrUpdate(stampa);
+                s.Flush();
+                s.Close();
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+        }
+
+        public static Stampa_View AzurirajStampa(Stampa_View m)//200OK
+        {
+            try
+            {
+                ISession s = DataLayer.GetSession();
+
+                Stampa o = s.Load<Stampa>(m.Id);
+                o.Boja = m.Boja;
+                o.Cena = m.Cena;
+                o.NazivLista = m.NazivLista;
+                o.TrajanjeDo = m.TrajanjeDo;
+                o.TrajanjeOd = m.TrajanjeOd;
+                
+
+
+                s.Update(o);
+                s.Flush();
+                s.Close();
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+
+            return m;
+        }
+
+        public static void ObrisiStampu(int id)//200OK
+        {
+            try
+            {
+                ISession s = DataLayer.GetSession();
+
+                Stampa m = s.Load<Stampa>(id);
+
+                m.Koordinator = null;
+
+
+                s.SaveOrUpdate(m);
+                s.Flush();
+
+                s.Delete(m);
+                s.Flush();
+                s.Close();
+            }
+            catch (Exception)
+            {
+                //handle exceptions
+                throw;
+            }
+        }
+
+        public static void DodajKoordinatoraStampa(int idKoordinatora, Stampa_View m)
+        {
+            try
+            {
+                ISession s = DataLayer.GetSession();
+
+
+                Koordinator_Opstine kOpstine = s.Load<Koordinator_Opstine>(idKoordinatora);
+
+                Stampa med = s.Load<Stampa>(m);
+
+
+                med.Koordinator = kOpstine;
+
+                kOpstine.Izborne_Aktivnosti.Add(med);
+
+
+                s.SaveOrUpdate(med);
+                s.Flush();
+                s.Close();
+
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+        }
+        #endregion
+
+        #region Pano
+        public static List<Pano_View> VratiPano()
+        {
+            List<Pano_View> rez = new List<Pano_View>();
+
+            try
+            {
+                ISession s = DataLayer.GetSession();
+
+                IEnumerable<Pano> pano = from o in s.Query<Pano>()
+                                             select o;
+
+                foreach (Pano o in stampa)
+                {
+                    var m = new Pano_View(o);
+
+                    rez.Add(m);
+                }
+
+                s.Close();
+
+            }
+            catch (Exception)
+            {
+                //handle exceptions
+                throw;
+            }
+
+            return rez;
+        }
+
+        public static Pano_View VratiPanoPoId(int id)//200OK
+        {
+            Pano_View m;
+            try
+            {
+                ISession s = DataLayer.GetSession();
+
+                Pano pano = s.Load<Pano>(id);
+
+
+                m = new Pano_View(pano);
+
+                s.Close();
+            }
+            catch (Exception)
+            {
+                //handle exceptions
+                throw;
+            }
+            return m;
+        }
+
+        public static void DodajPano(int idKoordinaoraOpstine, Pano_View m)//200OK
+        {
+            try
+            {
+                ISession s = DataLayer.GetSession();
+
+                Koordinator_Opstine kOpstine = s.Load<Koordinator_Opstine>(idKoordinaoraOpstine);
+
+                Pano pano = new Pano
+                {
+                    Grad = m.Grad,
+                    Agencija = m.Agencija,
+                    Ulica = m.Ulica,
+                    Povrsina = m.Povrsina,
+                    Cena = m.Cena,
+                    TrajanjeOd = m.TrajanjeOd,
+                    TrajanjeDo = m.TrajanjeOd,
+                    Koordinator = kOpstine
+
+                };
+
+                s.SaveOrUpdate(pano);
+                s.Flush();
+                s.Close();
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+        }
+
+        public static Pano_View AzurirajPano(Pano_View m)//200OK
+        {
+            try
+            {
+                ISession s = DataLayer.GetSession();
+
+                Pano o = s.Load<Pano>(m.Id);
+                o.Ulica = m.Ulica;
+                o.Povrsina = m.Povrsina;
+                o.Grad = m.Grad;
+                o.Agencija = m.Agencija;
+                o.Cena = m.Cena;
+                o.TrajanjeDo = m.TrajanjeDo;
+                o.TrajanjeOd = m.TrajanjeOd;
+
+
+
+                s.Update(o);
+                s.Flush();
+                s.Close();
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+
+            return m;
+        }
+
+        public static void ObrisiPano(int id)//200OK
+        {
+            try
+            {
+                ISession s = DataLayer.GetSession();
+
+                Pano m = s.Load<Pano>(id);
+
+                m.Koordinator = null;
+
+
+                s.SaveOrUpdate(m);
+                s.Flush();
+
+                s.Delete(m);
+                s.Flush();
+                s.Close();
+            }
+            catch (Exception)
+            {
+                //handle exceptions
+                throw;
+            }
+        }
+
+        public static void DodajKoordinatoraPano(int idKoordinatora, Pano_View m)
+        {
+            try
+            {
+                ISession s = DataLayer.GetSession();
+
+
+                Koordinator_Opstine kOpstine = s.Load<Koordinator_Opstine>(idKoordinatora);
+
+                Pano med = s.Load<Pano>(m);
+
+
+                med.Koordinator = kOpstine;
+
+                kOpstine.Izborne_Aktivnosti.Add(med);
+
+
+                s.SaveOrUpdate(med);
+                s.Flush();
+                s.Close();
+
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+        }
+
+        #endregion
+
+        #endregion
+
+        #region GlasackaMesta
+
+        public static List<Glasacka_Mesta_View> PreuzmiGlasackaMesta()
+        {
+            List<Glasacka_Mesta_View> rez = new List<Glasacka_Mesta_View>();
+
+            try
+            {
+                ISession s = DataLayer.GetSession();
+
+                IEnumerable<Glasacka_Mesta> rez1 = from o in s.Query<Glasacka_Mesta>()
+                                                   select o;
+
+                foreach (Glasacka_Mesta a_s in rez1)
+                {
+                    Glasacka_Mesta_View gm = new Glasacka_Mesta_View(a_s)
+                    {
+                        Primedbe = a_s.Primedbe.Select(prim => new Primedbe_View(prim)).ToList(),
+                        Aktivisti = a_s.Aktivisti.Select(akt => new Aktivista_Stranke_View(akt)).ToList(),
+                        Rezultati = a_s.Rezultati.Select(rezultati => new Rezultati_View(rezultati)).ToList()
+                    };
+
+                    rez.Add(gm);
+
+                }
+
+                s.Close();
+            }
+            catch (Exception)
+            {
+                //handle exceptions
+                throw;
+            }
+
+            return rez;
+        }
+
+
+        public static Glasacka_Mesta_View PreuzmiGlasackoMesto(int id)
+        {
+            Glasacka_Mesta_View gm;
+            try
+            {
+                ISession s = DataLayer.GetSession();
+
+                Glasacka_Mesta glasacko_mesto = s.Load<Glasacka_Mesta>(id);
+
+
+                gm = new Glasacka_Mesta_View(glasacko_mesto)
+                {
+                    Aktivisti = glasacko_mesto.Aktivisti.Select(akt => new Aktivista_Stranke_View(akt)).ToList(),
+                    Primedbe = glasacko_mesto.Primedbe.Select(prim => new Primedbe_View(prim)).ToList(),
+                    Rezultati = glasacko_mesto.Rezultati.Select(rez => new Rezultati_View(rez)).ToList()
+                };
+
+                s.Close();
+            }
+            catch (Exception)
+            {
+                //handle exceptions
+                throw;
+            }
+            return gm;
+        }
+
+        public static void DodajGlasackoMesto(Glasacka_Mesta_View gm)
+        {
+            try
+            {
+                ISession s = DataLayer.GetSession();
+
+                Glasacka_Mesta glasacko_mesto = new Glasacka_Mesta
+                {
+                    Naziv = gm.Naziv,
+                    Broj_biraca = gm.Broj_biraca,
+                    Broj_mesta = gm.Broj_mesta
+                };
+
+                s.SaveOrUpdate(glasacko_mesto);
+                s.Flush();
+                s.Close();
+            }
+            catch (Exception)
+            {
+                //handle exceptions
+                throw;
+            }
+        }
+
+        public static Glasacka_Mesta_View AzurirajGlasackoMesto(Glasacka_Mesta_View gm)
+        {
+            try
+            {
+                ISession s = DataLayer.GetSession();
+
+                Glasacka_Mesta o = s.Load<Glasacka_Mesta>(gm.Id);
+                o.Naziv = gm.Naziv;
+                o.Broj_biraca = gm.Broj_biraca;
+                o.Broj_mesta = gm.Broj_mesta;
+
+                s.Update(o);
+                s.Flush();
+                s.Close();
+            }
+            catch (Exception)
+            {
+                //handle exceptions
+                throw;
+            }
+
+            return gm;
+        }
+
+        public static void ObrisiGlasackoMesto(int id)
+        {
+            try
+            {
+                ISession s = DataLayer.GetSession();
+
+                Glasacka_Mesta o = s.Load<Glasacka_Mesta>(id);
+
+                s.Delete(o);
+                s.Flush();
+                s.Close();
+            }
+            catch (Exception)
+            {
+                //handle exceptions
+                throw;
+            }
+        }
+
+        #endregion
+
+        #region Rezultati
+
+        public static List<Rezultati_View> PreuzmiRezultate()
+        {
+            List<Rezultati_View> rez = new List<Rezultati_View>();
+
+            try
+            {
+                ISession s = DataLayer.GetSession();
+
+                IEnumerable<Rezultati> rez1 = from o in s.Query<Rezultati>()
+                                              select o;
+
+                foreach (Rezultati a_s in rez1)
+                {
+                    Rezultati_View gm = new Rezultati_View(a_s);
+
+                    rez.Add(gm);
+                }
+
+                s.Close();
+            }
+            catch (Exception)
+            {
+                //handle exceptions
+                throw;
+            }
+
+            return rez;
+        }
+
+
+        public static Rezultati_View PreuzmiRezultat(int id)
+        {
+            Rezultati_View rez;
+            try
+            {
+                ISession s = DataLayer.GetSession();
+
+                Rezultati rezultati = s.Load<Rezultati>(id);
+
+
+                rez = new Rezultati_View(rezultati);
+
+                s.Close();
+            }
+            catch (Exception)
+            {
+                //handle exceptions
+                throw;
+            }
+            return rez;
+        }
+
+        public static void DodajRezultat(Rezultati_View rez)
+        {
+            try
+            {
+                ISession s = DataLayer.GetSession();
+
+                Rezultati glasacko_mesto = new Rezultati
+                {
+                    Broj_Biraca = rez.Broj_Biraca,
+                    Procenat_Glasanja = rez.Procenat_Glasanja,
+                    Krug_Izbora = rez.Krug_Izbora
+                };
+
+                s.SaveOrUpdate(glasacko_mesto);
+                s.Flush();
+                s.Close();
+            }
+            catch (Exception)
+            {
+                //handle exceptions
+                throw;
+            }
+        }
+
+        public static Rezultati_View AzurirajRezultate(Rezultati_View rez)
+        {
+            try
+            {
+                ISession s = DataLayer.GetSession();
+
+                Rezultati o = s.Load<Rezultati>(rez.Id);
+                o.Broj_Biraca = rez.Broj_Biraca;
+                o.Procenat_Glasanja = rez.Procenat_Glasanja;
+                o.Krug_Izbora = rez.Krug_Izbora;
+
+                s.Update(o);
+                s.Flush();
+                s.Close();
+            }
+            catch (Exception)
+            {
+                //handle exceptions
+                throw;
+            }
+
+            return rez;
+        }
+
+        public static void ObrisiRezultat(int id)
+        {
+            try
+            {
+                ISession s = DataLayer.GetSession();
+
+                Rezultati o = s.Load<Rezultati>(id);
+
+                s.Delete(o);
+                s.Flush();
+                s.Close();
+            }
+            catch (Exception)
+            {
+                //handle exceptions
+                throw;
+            }
+        }
+        #endregion 

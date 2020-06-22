@@ -7003,19 +7003,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\acer\\.nuget\\packages\\": {}
+    "C:\\Users\\Dusan\\.nuget\\packages\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\acer\\Desktop\\IIIFazaSBP\\IzboriAPI\\OracleWebAPIService\\OracleWebAPIService.csproj",
+      "projectUniqueName": "D:\\Faks\\Sistemi baza\\Projekat\\IzboriAPI\\OracleWebAPIService\\OracleWebAPIService.csproj",
       "projectName": "OracleWebAPIService",
-      "projectPath": "C:\\Users\\acer\\Desktop\\IIIFazaSBP\\IzboriAPI\\OracleWebAPIService\\OracleWebAPIService.csproj",
-      "packagesPath": "C:\\Users\\acer\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\acer\\Desktop\\IIIFazaSBP\\IzboriAPI\\OracleWebAPIService\\obj\\",
+      "projectPath": "D:\\Faks\\Sistemi baza\\Projekat\\IzboriAPI\\OracleWebAPIService\\OracleWebAPIService.csproj",
+      "packagesPath": "C:\\Users\\Dusan\\.nuget\\packages\\",
+      "outputPath": "D:\\Faks\\Sistemi baza\\Projekat\\IzboriAPI\\OracleWebAPIService\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+      ],
       "configFilePaths": [
-        "C:\\Users\\acer\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Dusan\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -7028,8 +7032,8 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "C:\\Users\\acer\\Desktop\\IIIFazaSBP\\IzboriAPI\\DatabaseAccess\\DatabaseAccess.csproj": {
-              "projectPath": "C:\\Users\\acer\\Desktop\\IIIFazaSBP\\IzboriAPI\\DatabaseAccess\\DatabaseAccess.csproj"
+            "D:\\Faks\\Sistemi baza\\Projekat\\IzboriAPI\\DatabaseAccess\\DatabaseAccess.csproj": {
+              "projectPath": "D:\\Faks\\Sistemi baza\\Projekat\\IzboriAPI\\DatabaseAccess\\DatabaseAccess.csproj"
             }
           }
         }
@@ -7074,7 +7078,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.102\\RuntimeIdentifierGraph.json"
       }
     }
   }
