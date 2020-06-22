@@ -5,7 +5,7 @@ using System.Text;
 
 namespace DatabaseAccess.DTOs
 {
-    class Susreti_Kandidata_Sa_Gradjanima_View : Akcije_View
+    public class Susreti_Kandidata_Sa_Gradjanima_View : Akcije_View
     {
         public virtual string Grad { get; set; }
         public virtual string Lokacija { get; set; }
